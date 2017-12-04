@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <base href="http://localhost:4410" target="_blank">
+
+    <title>Standard Bank|Admin Branch Addition Page</title>
+
+    <link rel="shortcut icon"  href="wtimages/titlelogo.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="wtcss/register.css">
+
+
+
+</head>
+<body>
+    <form id="form" name="signup"  method="post" action="/adminbranchdatasubmit">
+        <h1>Create New Branch</h1>
+        <fieldset>
+		<legend><span class="number">1</span>Branch Details</legend>
+            Branch ID<input type="text" id="bid" name="branch_id" pattern="[S][B][A-Z]{3}[0-9][1-9]" placeholder="SBxxx00 (7 characters of branch id)" required><br>
+            
+            Branch Name<input type="text" id="bname" name="branch_name" pattern="[A-Z]{3,15}" placeholder="VIT UNIVERSITY" required/>
+            
+            Branch City<input type="text" id="bcity" name="branch_city" pattern="[A-Z]{3,15}" placeholder="VELLORE" required><br>
+          
+            Branch Address<input type="text" id="baddress" name="branch_address_1" pattern="[A-Z,-]{10,15}" placeholder="Line 1" required><br>
+            
+            Branch Address<input type="text" id="baddress" name="branch_address_2" pattern="[A-Z,-]{10,15}" placeholder="Line 2"><br>
+            
+            Phone<input type="text" id="bpno" name="branch_phone" pattern="[7-9][0-9]{9}" placeholder="10 digit branch phone number" required><br>
+            
+            <input type="submit" name="Submit_Btn" class="submit" id="submitbtn">
+            
+            <input type="reset" name="Reset_Btn" class="submit">
+        </fieldset>
+    </div>
+    </form>
+
+    <p id="back">
+        <a href="/wthtml/homepagetest.html" style="text-decoration:none;color:white">Back</a>
+    </p>
+
+</body>
+</html>
