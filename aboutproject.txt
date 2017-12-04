@@ -1,0 +1,3 @@
+# Online-banking-system
+This is a project in which the bank customers can register to bank's online portal and then they would be able to signin to their account and view their
+basic info, their account info, do transactions only to those account which are present the bank and they can also change their password.
