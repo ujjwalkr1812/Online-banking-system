@@ -1,3 +1,11 @@
 # Online-banking-system
-This is a project in which the bank customers can register to bank's online portal and then they would be able to signin to their account and view their
-basic info, their account info, do transactions only to those account which are present the bank and they can also change their password.
+LANGUAGES, TOOLS AND FRAMEWORKS used are:
+HTML5, CSS, Javascript, JQuery, Bootstrap, AngularJS, AJAX, Node.JS, MongoDB(mlabs)
+This is a project that provides online banking services to the customer.
+First the customer visits the branch to open his/her bank account.
+The bank employ then open's his/her account account and parallely adds him/her to the online banking databse.
+The bank customers needs to register to bank's online portal (in order to activate the online account) and then they would be able to login to their account and:
+1. view their basic info,
+2. their account info,
+3. do transactions (only to those account which are present the bank, since we don't have data of other bank account numbers) and
+4. they can also change their password.
