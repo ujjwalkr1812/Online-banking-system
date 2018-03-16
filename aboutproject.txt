@@ -3,7 +3,7 @@ LANGUAGES, TOOLS AND FRAMEWORKS used are:
 HTML5, CSS, Javascript, JQuery, Bootstrap, AngularJS, AJAX, Node.JS, MongoDB(mlabs)
 This is a project that provides online banking services to the customer.
 First the customer visits the branch to open his/her bank account.
-The bank employ then open's his/her account account and parallely adds him/her to the online banking databse.
+The bank employ then opens his/her account and parallely adds him/her to the online banking databse.
 The bank customers needs to register to bank's online portal (in order to activate the online account) and then they would be able to login to their account and:
 1. view their basic info,
 2. their account info,
