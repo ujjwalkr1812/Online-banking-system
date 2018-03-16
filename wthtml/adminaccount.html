@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <base href="http://localhost:4410" target="_blank">
+
+    <title>Standard Bank|Admin Account Creation Page</title>
+
+    <link rel="shortcut icon"  href="wtimages/titlelogo.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="wtcss/register.css">
+
+
+
+</head>
+<body>
+    <form id="form" name="signup"  method="post" action="/adminaccountdatasubmit">
+        <h1>Create New Account</h1>
+        <fieldset>
+		<legend><span class="number">1</span>User Credentials</legend>
+            User ID<input type="text" id="uid"  name="user_id" pattern="[a-zA-Z]{3}[0-9]{2}[_@.][a-zA-Z0-9]{4}" placeholder="abc01@a1b2" required/><br>
+          
+        </fieldset>
+        
+        <fieldset>
+		<legend><span class="number">2</span>Account Information</legend>
+            
+            Account_Number<br><br><input type="number" id="an" name="acc_no" pattern="[0-9]{9}" placeholder="AccountNo" style="width: 100%; height: 50px; font-size: 20px; background-color: rgb(225,229,237); border: none; padding: 15px 20px" required/><br><br>
+            
+            Start_Date<input type="date" id="sd" name="sdate" placeholder="Enter the date when account started" />
+            
+            Balance<br><br><input type="number" id="bal" name="balance" pattern="[0-9]{1,12}[.][0-9]{2}" placeholder="Initial Balance." style="width: 100%; height: 50px; font-size: 20px; background-color: rgb(225,229,237); border: none; padding: 15px 20px" required><br><br>
+            
+            Account_Type<input type="text" id="at" name="Account_type" placeholder="Enter type of account" required><br>
+            
+            Interest_Rate (In percent)<br><br><input type="number" id="ir" name="interestrate" pattern="[0-9]{1,2}[.][0-9]{2}" placeholder="5.86" style="width: 100%; height: 50px; font-size: 20px; background-color: rgb(225,229,237); border: none; padding: 15px 20px" required><br><br>
+            
+            <input type="submit" name="Submit_Btn" class="submit" id="submitbtn">
+            
+            <input type="reset" name="Reset_Btn" class="submit">
+        </fieldset>
+    </div>
+    </form>
+
+
+    <p id="back">
+        <a href="/wthtml/homepagetest.html" style="text-decoration:none;color:white">Back</a>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <base href="http://localhost:4410" target="_blank">
+
+  <title>Standard Bank|About Loans</title>
+  <link rel="shortcut icon"  href="wtimages\titlelogo.png">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="wtcss\css_of_offer_webpage.css">
+
+<style>
+
+#lb3 ul {
+    list-style-type: none;
+    margin: 0px 200px;
+    border-left: 2px solid rgb(150,150,150);
+    padding: 0px;
+    overflow: hidden;
+}
+
+#lb3 ul li {
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    color: rgb(3,32,61);
+    text-align: center;
+    padding: 12px;
+    width: 150px;
+    border-right: 2px solid rgb(150,150,150);
+}
+
+#lb3 ul li:hover {
+    background-color: lightblue;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+#address {
+  clear: left;
+  padding: 0px 200px;
+  font-size: 18px;
+  color: black;
+  background: linear-gradient(to right, rgba(3,32,61,0.5),rgba(3,32,61,0.4),rgba(3,32,61,0.5),rgba(3,32,61,0.4), rgba(3,32,61,0.5));
+  border-top: 2px solid grey;
+}
+
+#aboutus {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#career {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#contactus {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#container h1 {
+    color: rgb(3,32,61);
+}
+
+#container p {
+    color: rgba(3,32,61,0.9);
+    font-size: 1.5em;
+}
+
+#container ul li {
+    font-size: 2em;
+    color: rgb(3,32,61);
+}
+
+#container ul li p {
+    color: rgba(3,32,61,0.9);
+    font-size: 0.7em;
+}
+
+#container ol li {
+    font-size: 2em;
+    color: rgb(3,32,61);
+}
+
+#container ol li h2 {
+    color: rgb(3,32,61);
+    font-size: 1em;
+}
+
+#container ol li p {
+    color: rgba(3,32,61,0.9);
+    font-size: 0.7em;
+}
+
+</style>
+
+<script>
+  function func1() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        y.style.display = 'none';
+        z.style.display = 'none';
+        document.getElementById("li1").style.color = "white";
+        document.getElementById("li1").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+        y.style.display = 'none';
+        z.style.display = 'none';
+    } else {
+        x.style.display = 'none';
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+    }
+  }
+
+  function func2() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+        x.style.display = 'none';
+        z.style.display = 'none';
+        document.getElementById("li2").style.color = "white";
+        document.getElementById("li2").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+    } else {
+        y.style.display = 'none';
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+    }
+  }
+
+  function func3() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (z.style.display === 'none') {
+        z.style.display = 'block';
+        x.style.display = 'none';
+        y.style.display = 'none';
+        document.getElementById("li3").style.color = "white";
+        document.getElementById("li3").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+        x.style.display = 'none';
+        x.style.display = 'none';
+        y.style.display = 'none';
+    } else {
+        z.style.display = 'none';
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+    }
+  }
+
+</script>
+
+</head>
+
+
+<body leftmargin="0" topmargin="0" style="background: linear-gradient(to right, rgba(3,32,61,0.7),rgba(3,32,61,0.05),rgba(3,32,61,0.05),rgba(3,32,61,0.05), rgba(3,32,61,0.7))">
+
+  <div id="top_table" margin="0px" padding="0px" border="0px">
+
+    <table width="100%" height="125px" border="0" cellpadding="0" cellspacing="0" margin="0">
+
+      <th>
+
+        <td width="20%">
+          <img id="img01" src="wtimages\bank_logo_new.jpg" alt="Logo">
+        </td>
+      
+        <td width="65%" style="font-size: 50px;font-family: verdana;text-align: center;">
+          <b><a class="a_title" href="wthtml/homepagenew.htm" target="_top">STANDARD BANK</a></b><br>
+        </td>
+
+        <td width="15%" style="padding-top:10px;">
+          <a class="a01" href="wthtml/LogIn.html" target="_blank">
+            <img src="wtimages\login.jpg" alt="login" style="width:40px;height:40px;padding-left:20px;padding-right:10px;padding-bottom:10px;float:left">
+            <p style="color:rgb(7,26,56);line-height:30px;font-size:25px;margin:5px">Log in</p>
+          </a>
+          <br>
+          <a class="a01" href="wthtml/Register.html" target="_blank">
+            <img src="wtimages\register.jpg" alt="register" style="width:40px;height:40px;padding-left:20px;padding-right:10px;padding-bottom:10px;float:left">
+            <p style="color:rgb(7,26,56);line-height:30px;font-size:25px;margin:5px">Register</p>
+          </a>
+        </td>
+
+      </th>
+
+    </table>
+
+  </div>
+
+  <div id="lb1">
+
+    <div id="box1">
+
+      <ul>
+
+        <li class="a01">Account
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankaccount.html#savings">Savings Account</a></li>
+            <li><a class="a01" href="wthtml/bankaccount.html#current">Curent Account</a></li>
+
+          </ul>
+
+        </li>
+
+        <li class="a01">Deposits
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankdeposits.html#fixed">Fixed deposits</a></li>
+            <li><a class="a01" href="wthtml/bankdeposits.html#recurring">Recurring deposits</a></li>
+
+          </ul>
+
+        </li>
+
+        <li class="a01">Loans
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankloan.html#home">Home Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#personal">Personal Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#education">Education loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#car">Car Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#gold">Gold Loans</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Insurance
+          <ul>
+            <li><a class="a01" href="wthtml/bankinsurance.html#life">Life Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#health">Health Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#homeins">Home Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#vehicle">Vehicle Insurance</a></li>
+          </ul>
+        </li>
+        
+        <li class="a01">Cards
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankcards.html#credit">Credit Cards</a></li>
+            <li><a class="a01" href="wthtml/bankcards.html#debit">Debit Cards</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Facilities
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankfacilities.html#locker">Locker</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#check">Check Books</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#pension">Pension Schemes</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#gift">Gift Cards</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Offers
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankoffers.html#gold">Gold deposit</a></li>
+            <li><a class="a01" href="wthtml/bankoffers.html#senior">Senior Citizens</a></li>
+            <li><a class="a01" href="wthtml/bankoffers.html#students">Students</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Investments
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankinvestments.html#mutual">Mutual Funds</a></li>
+            <li><a class="a01" href="wthtml/bankinvestments.html#ppf">About PPF</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Phishing
+
+          <ul>
+
+            <li><a class="a01" href="#">About phishing</a></li>
+            <li><a class="a01" href="#">Prevention</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Contact Us
+
+          <ul>
+
+            <li><a class="a01" href="#">e-Mail</a></li>
+            <li><a class="a01" href="#">Phone</a></li>
+            <li><a class="a01" href="#">Social Media</a></li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+
+    <div id="box2">
+      <div id="container">
+        <h1 id="home">Home Loans</h1>
+        <p>
+            There are quite a few perks associated with the Standard Bank Home Loan- international standard of service,
+             customer comfort and a hassle free, transparent application process being the expected highlights. The bank 
+             assures its prospective customers that their application for the home loan will be processed within the 
+             span of 5 days, failing which the customer is liable to receive a refund of Rs.5,000 (terms & conditions 
+             apply, of course). The Standard  Home Loan interest rates are very competitive and offer the salaried and 
+             self-employed applicants a wide range of repayment tenures, starting at 5 years to 20 years. 
+        </p>
+
+
+        <h1 id="personal">Personal Loan</h1>
+
+        <p>
+            A Personal Loan is a great tool in managing your finances and acts as an impetus in putting your plans into actions.
+        </p>
+        <ull style="list-style-type: none;">
+            <li>
+                <p>
+                    <b>Instant online approval:</b><br>
+                    Get 100% end-to-end online Personal Loan solutions, which include information and assistance for Personal Loan 
+                    eligibility criteria and documents, application to approval and disbursal. By opting for a Personal Loan from 
+                    Bajaj Finserv you can get instant approval in 5 minutes and disbursal in your bank within 24 hours, through our 
+                    online facility. All you need to do is fill an online form and check your Personal Loan eligibility online. Once 
+                    approved, a Bajaj Finserv representative will get in touch with you and collect the documents required for Personal Loan.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Get funds in 24 hours in bank:</b><br>
+                    We ensure as a standard that funds are at your disposal within 24 hours of the Personal Loan approval. 
+                    This is the fastest turnaround time by any NBFC in India.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Loans up to Rs.25 lakh:</b><br>
+                    You can apply for a Personal Loan online from Bajaj Finserv up to Rs.25 lakh and repay it at your ease by opting 
+                    for tenures ranging from 24 months to 60 months. You can also use the Personal Loan EMI calculator to know how 
+                    much EMI you will have to pay for your Personal Loan.
+                </p>
+            </li>
+        </ull>         
+
+
+        <h1 id="education">Education loan</h1>
+
+        <ul style="list-style-type: none;">
+            <li>
+                <p>If you are a full-time student, you will only need to start repaying your loan on completion of your 
+                    studies. During your time of study, your surety will need to pay the monthly interest and service fees. 
+                    The payments will be charged to your surety's bank account. </p>
+            </li>
+            <li>
+                <p>You will be granted a grace period for capital repayments after you have completed your studies and 
+                    have not found employment. The grace period may be extended if you must complete your articles, 
+                    internship or community service. </p>
+            </li>
+            <li>
+                <p>If you are a part-time student you will need to repay your loan while you are studying. </p>
+            </li>
+            <li>
+                <p>Monthly payments must be made by debit order. </p>
+            </li>
+            <li>
+                <p>You will be required to repay your loan immediately, if you do not complete your studies. </p>
+            </li>
+            <li>
+                <p>Once your loan is in repayment the monthly repayments will not change. If you are a part-time student 
+                    the monthly repayment will change whenever you increase the limit on your loan while studying. </p>
+            </li>
+            <li>
+                <p>The repayment period of your loan will be affected by one or more of the following: 
+                    (1)Paying more than the minimum monthly instalment 
+                    (2)Changes in the interest rate.</p>
+            </li>
+        </ul>
+
+        <h1 id="car">Car Loan</h1>
+        <p>
+            Car loans are the simple means to a glorious life milestone- owning your dream car. Almost all of us want to 
+            own that shiny set of wheels and drive it triumphantly, into the sunset. However, owning a car (vehicle in general) 
+            in India is a costly proposition, one that usually demands the impetus of a sizable financial assistance from banks/ 
+            financial institutions that have dedicated loan products in this regard. Almost all private/public sector lenders in 
+            India offer car loan options with terms and conditions that are highly customer friendly, affordable and scalable. 
+            By qualifying against a very simple list of identity, income and credit history qualifications, you can be the proud 
+            owner of your own brand new car.
+        </p>
+
+        <h1 id="gold">Gold Loan</h1>
+        <p>
+            As the name suggests this is the loan given against gold. Many nationalized banks, private banks and other financial 
+            companies offer this loan at attractive rates. Many go for this loan for short period to meet the requirement of their 
+            children’s education, marriage and other financial problems in the family. And others think that instead of keeping 
+            the gold idle at home or locker, loan against gold is the best option. Moreover with the rise in gold rates the demand 
+            from companies and banks offering such loans has raised.
+        </p>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div id="lb3" style="background-color: whitesmoke;border-top:2px solid rgb(150,150,150)">
+    <ul>
+      <li id="li1" onclick="func1()">About Us</button></li>
+      <li id="li2" onclick="func2()">Career</li>
+      <li id="li3" onclick="func3()">Contact Us</li>
+    </ul>
+    <div id="address">
+      
+      <div id="aboutus">
+        <h2 style="color:rgb(3,32,41);"><b>Designers and Developers</b></h2>
+        <p style="font-size:18px;">
+          <b>Developer:</b><br>
+          Ujjwal Kumar<br>
+        </p>
+      </div>
+
+      <div id="career">
+        <h2 style="color:rgb(3,32,41);"><b>Careers @ Standard Bank</b></h2>
+        <p style="font-size:18px;">
+          Join our international team and you could<br>
+          move your career forward from the start.
+        </p>
+      </div>
+      
+      <div id="contactus">
+        <h2 style="color:rgb(3,32,41);"><b>Contact Standard Bank</b></h2>
+        <p style="font-size:18px;">
+          &#9742 Phone: 3124-25631489<br>
+          &#9993 e-Mail: standardbank@gmail.com<br>
+          <br>
+          <br>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+<footer style="background-color:rgb(3,32,61);">
+  <p style="color:whitesmoke;border:2px solid grey;padding:2px;margin:0px;text-align:center;border-style:inset">All rights reserved.</p>
+</footer>
+
+</html>

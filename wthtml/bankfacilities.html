@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <base href="http://localhost:4410" target="_blank">
+
+  <title>Standard Bank|Facilities Info</title>
+  <link rel="shortcut icon"  href="wtimages\titlelogo.png">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="wtcss\css_of_offer_webpage.css">
+
+<style>
+
+#lb3 ul {
+    list-style-type: none;
+    margin: 0px 200px;
+    border-left: 2px solid rgb(150,150,150);
+    padding: 0px;
+    overflow: hidden;
+}
+
+#lb3 ul li {
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    color: rgb(3,32,61);
+    text-align: center;
+    padding: 12px;
+    width: 150px;
+    border-right: 2px solid rgb(150,150,150);
+}
+
+#lb3 ul li:hover {
+    background-color: lightblue;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+#address {
+  clear: left;
+  padding: 0px 200px;
+  font-size: 18px;
+  color: black;
+  background: linear-gradient(to right, rgba(3,32,61,0.5),rgba(3,32,61,0.4),rgba(3,32,61,0.5),rgba(3,32,61,0.4), rgba(3,32,61,0.5));
+  border-top: 2px solid grey;
+}
+
+#aboutus {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#career {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#contactus {
+  padding: 20px 0px;
+  height: 200px;
+  display:none;
+}
+
+#container h1 {
+    color: rgb(3,32,61);
+}
+
+#container p {
+    color: rgba(3,32,61,0.9);
+    font-size: 1.5em;
+}
+
+#container ul li {
+    font-size: 2em;
+    color: rgb(3,32,61);
+}
+
+#container ul li p {
+    color: rgba(3,32,61,0.9);
+    font-size: 0.7em;
+}
+
+#container ol li {
+    font-size: 2em;
+    color: rgb(3,32,61);
+}
+
+#container ol li h2 {
+    color: rgb(3,32,61);
+    font-size: 1em;
+}
+
+#container ol li p {
+    color: rgba(3,32,61,0.9);
+    font-size: 0.7em;
+}
+
+</style>
+
+<script>
+  function func1() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        y.style.display = 'none';
+        z.style.display = 'none';
+        document.getElementById("li1").style.color = "white";
+        document.getElementById("li1").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+        y.style.display = 'none';
+        z.style.display = 'none';
+    } else {
+        x.style.display = 'none';
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+    }
+  }
+
+  function func2() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+        x.style.display = 'none';
+        z.style.display = 'none';
+        document.getElementById("li2").style.color = "white";
+        document.getElementById("li2").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+    } else {
+        y.style.display = 'none';
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+    }
+  }
+
+  function func3() {
+    var x=document.getElementById("aboutus");
+    var y=document.getElementById("career");
+    var z=document.getElementById("contactus");
+    if (z.style.display === 'none') {
+        z.style.display = 'block';
+        x.style.display = 'none';
+        y.style.display = 'none';
+        document.getElementById("li3").style.color = "white";
+        document.getElementById("li3").style.backgroundColor = "rgb(3,32,61)";
+        document.getElementById("li1").style.color = "rgb(3,32,61)";
+        document.getElementById("li1").style.backgroundColor = "white";
+        document.getElementById("li2").style.color = "rgb(3,32,61)";
+        document.getElementById("li2").style.backgroundColor = "white";
+        x.style.display = 'none';
+        x.style.display = 'none';
+        y.style.display = 'none';
+    } else {
+        z.style.display = 'none';
+        document.getElementById("li3").style.color = "rgb(3,32,61)";
+        document.getElementById("li3").style.backgroundColor = "white";
+    }
+  }
+
+</script>
+
+</head>
+
+
+<body leftmargin="0" topmargin="0" style="background: linear-gradient(to right, rgba(3,32,61,0.7),rgba(3,32,61,0.05),rgba(3,32,61,0.05),rgba(3,32,61,0.05), rgba(3,32,61,0.7))">
+
+  <div id="top_table" margin="0px" padding="0px" border="0px">
+
+    <table width="100%" height="125px" border="0" cellpadding="0" cellspacing="0" margin="0">
+
+      <th>
+
+        <td width="20%">
+          <img id="img01" src="wtimages\bank_logo_new.jpg" alt="Logo">
+        </td>
+      
+        <td width="65%" style="font-size: 50px;font-family: verdana;text-align: center;">
+          <b><a class="a_title" href="wthtml/homepagenew.htm" target="_top">STANDARD BANK</a></b><br>
+        </td>
+
+        <td width="15%" style="padding-top:10px;">
+          <a class="a01" href="wthtml/LogIn.html" target="_blank">
+            <img src="wtimages\login.jpg" alt="login" style="width:40px;height:40px;padding-left:20px;padding-right:10px;padding-bottom:10px;float:left">
+            <p style="color:rgb(7,26,56);line-height:30px;font-size:25px;margin:5px">Log in</p>
+          </a>
+          <br>
+          <a class="a01" href="wthtml/Register.html" target="_blank">
+            <img src="wtimages\register.jpg" alt="register" style="width:40px;height:40px;padding-left:20px;padding-right:10px;padding-bottom:10px;float:left">
+            <p style="color:rgb(7,26,56);line-height:30px;font-size:25px;margin:5px">Register</p>
+          </a>
+        </td>
+
+      </th>
+
+    </table>
+
+  </div>
+
+  <div id="lb1">
+
+    <div id="box1">
+
+      <ul>
+
+        <li class="a01">Account
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankaccount.html#savings">Savings Account</a></li>
+            <li><a class="a01" href="wthtml/bankaccount.html#current">Curent Account</a></li>
+
+          </ul>
+
+        </li>
+
+        <li class="a01">Deposits
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankdeposits.html#fixed">Fixed deposits</a></li>
+            <li><a class="a01" href="wthtml/bankdeposits.html#recurring">Recurring deposits</a></li>
+
+          </ul>
+
+        </li>
+
+        <li class="a01">Loans
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankloan.html#home">Home Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#personal">Personal Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#education">Education loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#car">Car Loans</a></li>
+            <li><a class="a01" href="wthtml/bankloan.html#gold">Gold Loans</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Insurance
+          <ul>
+            <li><a class="a01" href="wthtml/bankinsurance.html#life">Life Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#health">Health Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#homeins">Home Insurance</a></li>
+            <li><a class="a01" href="wthtml/bankinsurance.html#vehicle">Vehicle Insurance</a></li>
+          </ul>
+        </li>
+        
+        <li class="a01">Cards
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankcards.html#credit">Credit Cards</a></li>
+            <li><a class="a01" href="wthtml/bankcards.html#debit">Debit Cards</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Facilities
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankfacilities.html#locker">Locker</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#check">Check Books</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#pension">Pension Schemes</a></li>
+            <li><a class="a01" href="wthtml/bankfacilities.html#gift">Gift Cards</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Offers
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankoffers.html#gold">Gold deposit</a></li>
+            <li><a class="a01" href="wthtml/bankoffers.html#senior">Senior Citizens</a></li>
+            <li><a class="a01" href="wthtml/bankoffers.html#students">Students</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Investments
+
+          <ul>
+
+            <li><a class="a01" href="wthtml/bankinvestments.html#mutual">Mutual Funds</a></li>
+            <li><a class="a01" href="wthtml/bankinvestments.html#ppf">About PPF</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Phishing
+
+          <ul>
+
+            <li><a class="a01" href="#">About phishing</a></li>
+            <li><a class="a01" href="#">Prevention</a></li>
+
+          </ul>
+
+        </li>
+        
+        <li class="a01">Contact Us
+
+          <ul>
+
+            <li><a class="a01" href="#">e-Mail</a></li>
+            <li><a class="a01" href="#">Phone</a></li>
+            <li><a class="a01" href="#">Social Media</a></li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+
+    <div id="box2">
+      <div id="container">
+        <h1 id="lockers">Lockers</h1>
+        <p>
+            SAFE DEPOSIT LOCKER. For the safety of your valuables, we offer safe deposit locker facility at a large 
+            number of our branches. There is a nominal annual rent, which depends on the size of the locker and the 
+            centre at which the branch is located. The rent is payable in advance for the Financial Year. As per 
+            safe deposit memorandum of hiring locker, the bank will not be responsible for any loss or damage of 
+            the contents kept in the safe deposit vault as a result of any act of war or civil disorder or theft or 
+            burglary and the contents will be kept by the hirer at his or her sole risk and responsibility.
+        </p>
+               
+
+
+        <h1 id="check">Check Books</h1>
+        <p>
+            Its is a folder or small book containing preprinted paper instruments issued to checking account holders 
+            and used to pay for goods or services. A checkbook contains sequentially numbered checks that account 
+            holders can use as a bill of exchange. Whether you track your deposits and withdrawals in your checkbook 
+            register, or online, follow the same five steps to balance your account every month: Enter all transactions 
+            into your checkbook register each day. This includes ATM withdrawals, online bill payments and debit card 
+            purchases. Cheques are 
+            a type of bill of exchange and were developed as a way to make payments without the need to carry large 
+            amounts of money. Paper money evolved from promissory notes, another form of negotiable instrument similar 
+            to cheques in that they were originally a written order to pay the given amount to whoever had it in their 
+            possession (the "bearer"). A cheque is a negotiable instrument instructing a financial institution to pay 
+            a specific amount of a specific currency from a specified transactional account held in the drawer's name 
+            with that institution. Both the drawer and payee may be natural persons or legal entities. Cheques are 
+            order instruments, and are not in general payable simply to the bearer as bearer instruments are, but 
+            must be paid to the payee.
+        </p>
+            
+
+        <h1 id="pension">Pention</h1>
+        <p>
+            A pension is a fund into which a sum of money is added during an employee's employment years, and from which 
+            payments are drawn to support the person's retirement from work in the form of periodic payments. A pension 
+            may be a "defined benefit plan" where a fixed sum is paid regularly to a person, or a "defined contribution 
+            plan" under which a fixed sum is invested and then becomes available at retirement age.[1] Pensions should 
+            not be confused with severance pay; the former is usually paid in regular installments for life after retirement,
+             while the latter is typically paid as a fixed amount after involuntary termination of employment prior to
+              retirement. The terms "retirement plan" and "superannuation" tend to refer to a pension granted upon retirement 
+              of the individual.[2] Retirement plans may be set up by employers, insurance companies, the government or other 
+              institutions such as employer associations or trade unions. Called retirement plans in the United States, they 
+              are commonly known as pension schemes in the United Kingdom and Ireland and superannuation plans (or super[3]) 
+              in Australia and New Zealand. Retirement pensions are typically in the form of a guaranteed life annuity, thus 
+              insuring against the risk of longevity. A pension created by an employer for the benefit of an employee is
+               commonly referred to as an occupational or employer pension. Labor unions, the government, or other organizations 
+               may also fund pensions. Occupational pensions are a form of deferred compensation, usually advantageous to employee 
+               and employer for tax reasons. Many pensions also contain an additional insurance aspect, since they often will pay 
+               benefits to survivors or disabled beneficiaries. Other vehicles (certain lottery payouts, for example, or an 
+               annuity) may provide a similar stream of payments.
+        </p>
+        
+
+        <h1 id="gift">Gift Cards</h1>
+        <p>
+            A gift card (also known as gift certificate in North America, or gift voucher or gift token in the UK[1]) is a prepaid 
+            stored-value money card usually issued by a retailer or bank to be used as an alternative to cash for purchases within 
+            a particular store or related businesses. Gift cards are also given out by retailers and marketers as part of a 
+            promotion strategy, to entice the recipient to come in or return to the store, and at times such cards are called cash 
+            cards. Gift cards are generally redeemable only for purchases at the relevant retail premises and cannot be cashed out, 
+            and in some situations may be subject to an expiry date or fees. Visa and MasterCard credit cards produce generic gift 
+            cards which need not be redeemed at particular stores, and which are widely used for cashback marketing strategies. A 
+            feature of these cards is that they are generally anonymous and are disposed of when the stored value on a card is 
+            exhausted.
+        </p>
+        
+        
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  
+  <div id="lb3" style="background-color: whitesmoke;border-top:2px solid rgb(150,150,150)">
+    <ul>
+      <li id="li1" onclick="func1()">About Us</button></li>
+      <li id="li2" onclick="func2()">Career</li>
+      <li id="li3" onclick="func3()">Contact Us</li>
+    </ul>
+    <div id="address">
+      
+      <div id="aboutus">
+        <h2 style="color:rgb(3,32,41);"><b>Designers and Developers</b></h2>
+        <p style="font-size:18px;">
+          <b>Developer:</b><br>
+          Ujjwal Kumar<br>
+        </p>
+      </div>
+
+      <div id="career">
+        <h2 style="color:rgb(3,32,41);"><b>Careers @ Standard Bank</b></h2>
+        <p style="font-size:18px;">
+          Join our international team and you could<br>
+          move your career forward from the start.
+        </p>
+      </div>
+      
+      <div id="contactus">
+        <h2 style="color:rgb(3,32,41);"><b>Contact Standard Bank</b></h2>
+        <p style="font-size:18px;">
+          &#9742 Phone: 3124-25631489<br>
+          &#9993 e-Mail: standardbank@gmail.com<br>
+          <br>
+          <br>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+<footer style="background-color:rgb(3,32,61);">
+  <p style="color:whitesmoke;border:2px solid grey;padding:2px;margin:0px;text-align:center;border-style:inset">All rights reserved.</p>
+</footer>
+
+</html>

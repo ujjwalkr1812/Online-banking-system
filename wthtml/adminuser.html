@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <base href="http://localhost:4410" target="_blank">
+
+    <title>Standard Bank|Admin User Register Page</title>
+
+    <link rel="shortcut icon"  href="wtimages/titlelogo.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="wtcss/register.css">
+
+<script>
+function validateForm() {
+    var x1 = document.getElementById('pw').value;
+    var x2 = document.getElementById('cpw').value;
+
+    if(x1!=x2) {
+        alert("Passwword and Confirm password fild should have same values!");
+        return false;
+    }
+
+    return true;
+
+}
+</script>
+
+
+</head>
+<body>
+    <form id="form" name="signup"  method="post" action="/adminuserdatasubmit" onsubmit="return validateForm()">
+        <h1>Register New Customer</h1>
+        <fieldset>
+		<legend><span class="number">1</span>User Credentials</legend>
+            User ID<input type="text" id="uid"  name="user_id" pattern="[a-zA-Z]{3}[0-9]{2}[_@.][a-zA-Z0-9]{4}" placeholder="abc01@a1b2" required/><br>
+          
+        </fieldset>
+        
+        <fieldset>
+		<legend><span class="number">2</span>Personal Information</legend>
+            
+            First Name<input type="text" id="fn" name="fname" pattern="[A-Z]{3,15}" placeholder="ABC...Min of three letters in BOLD" required/>
+            
+            Middle Name<input type="text" id="mn" name="mname" pattern="[A-Z]{3,15}" placeholder="ABC...Min of three letters in BOLD" />
+            
+            Last Name<input type="text" id="ln" name="lname" pattern="[A-Z]{3,15}" placeholder="ABC...Min of three letters in BOLD" required/><br><br>
+            
+            Gender:
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br>
+            
+            City<input type="text" id="city" name="city" pattern="[A-Z]{3,15}" placeholder="ABC...Min of three letters in BOLD" required><br>
+            
+            DOB<input type="date" id="dob" name="dob" max="1998-12-31" placeholder="dd-mm-yyyy" required><br>
+            
+            Postal code<input type="text" id="pin" name="pin_code" pattern="[0-9]{6}" placeholder="632014" required><br>
+            
+            Email<input type="email" id="email" name="email" pattern="^[A-Za-z]{3}[A-Za-z._0-9]{1,}[A-Za-z]{0,}[@]{1}[a-zA-Z]{2,15}[.][a-zA-Z.]{2,5}$" placeholder="abc5x@example.com" required><br>
+            
+            Phone<input type="text" id="pno" name="phone" pattern="[7-9][0-9]{9}" placeholder="10 digit valid phone number" required><br>
+            
+            Branch ID<input type="text" id="bid" name="branch_id" pattern="[S][B][A-Z]{3}[0-9][1-9]" placeholder="SBxxx00 (7 characters of branch id)" required><br>
+
+            <input type="submit" name="Submit_Btn" class="submit" id="submitbtn">
+            
+            <input type="reset" name="Reset_Btn" class="submit">
+        </fieldset>
+    </div>
+    </form>
+
+    <p id="back">
+        <a href="/wthtml/homepagetest.html" style="text-decoration:none;color:white">Back</a>
+    </p>
+
+</body>
+</html>
