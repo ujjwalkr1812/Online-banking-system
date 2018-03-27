@@ -9,7 +9,7 @@ var cookiesession  = require('cookie-session');
 var db;
 app.use(express.static('public'));
 
-mongoclient.connect('mongodb://ujjwalobs:ujjwalkr@ds239965.mlab.com:39965/online_banking_system',function(err,db1){
+mongoclient.connect('mongodb://<dbuser>:<dbpassword>@ds239965.mlab.com:39965/online_banking_system',function(err,db1){
     if(err)
     {
         return console.log(err);
